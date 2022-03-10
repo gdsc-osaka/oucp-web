@@ -3,13 +3,13 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/gonuxt-tutorial/',
+          base: '/oupc-web/',
         },
       }
     : {}
 const faviconPath =
   process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? '/gonuxt-tutorial/favicon.ico'
+    ? '/oupc-web/favicon.ico'
     : '/favicon.ico'
 
 export default {
@@ -20,15 +20,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - GoNuxt Tutorial',
-    title: 'GoNuxt Tutorial',
+    titleTemplate: '%s - OUPC',
+    title: 'OUPC',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'GoNuxt Tutorial' },
+      { hid: 'description', name: 'description', content: 'OUPC' },
       { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'keywords',
@@ -36,7 +36,7 @@ export default {
         content: 'nuxtjs,web',
       },
 
-      { hid: 'og:site_name', property: 'og:site_name', content: 'GONuxT' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'OUPC' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
@@ -46,12 +46,12 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'GONuxT - Web Site Template & Library built for Nuxt.js',
+        content: 'OUPC - Web Site of OUPC',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'GoNuxt Tutorial',
+        content: 'OUPC',
       },
       {
         hid: 'og:image',
