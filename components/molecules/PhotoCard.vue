@@ -49,6 +49,7 @@
             :href="locate"
             class="gnt-intro-a-btn lighten-1"
             color="error"
+            target="_blank"
           >
             {{ txtBody }}
           </v-btn>
