@@ -1,0 +1,33 @@
+<section class="gnt-sec-2">
+  <v-container fluid>
+    <section class="gnt-sec-3">
+      <v-row>
+        <v-col cols="12">
+          <h2 class="font-weight-bold">新歓応募用Google Form</h2>
+        </v-col>
+      </v-row>
+      <v-row class="d-flex justify-left align-center gont-tile-layout-template">
+        <v-col
+          cols="4"
+          sm="4"
+          md="4"
+          xs="12"
+          class="pa-md-3 gonuxt-tile"
+          v-for="tile in tiles2Col"
+          :key="tile.title"
+        >
+          <nuxt-link to="/" class="text-decoration-none">
+            <PhotoCard
+              :imgSrc="tile.imgSrc"
+              :title="tile.title"
+              :titleSize="tile.titleSize"
+              :txtPosition="tile.txtPosition"
+              :link="tile.link"
+              :txtBody="tile.txtBody"
+            />
+          </nuxt-link>
+        </v-col>
+      </v-row>
+    </section>
+  </v-container>
+</section>

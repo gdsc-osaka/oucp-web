@@ -82,6 +82,7 @@ export default {
       '~/gonuxt/components/molecules',
       '~/gonuxt/components/organisms',
       '~/components',
+      '~/components/molecules',
       '~/sections/',
     ],
   },
