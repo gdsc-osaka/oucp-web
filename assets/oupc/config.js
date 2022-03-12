@@ -4,12 +4,15 @@ export default {
     nameShort: '第61代大阪大学応援団',
     header: {
       links: [
-        { icon: 'mdi-twitter', link: 'https://twitter.com/' },
+        { icon: 'mdi-twitter', link: 'https://twitter.com/oucp60_shinkan' },
         {
           icon: 'mdi-instagram',
-          link: 'https://www.instagram.com/',
+          link: 'https://www.instagram.com/oucp61_shinkan/',
         },
-        { icon: 'mdi-youtube', link: 'https://www.youtube.com/?gl=JP&hl=ja' },
+        {
+          icon: 'mdi-youtube',
+          link: 'https://www.youtube.com/channel/UCZgxA7NqKHRBlIMOIeNvCcg',
+        },
       ],
     },
 

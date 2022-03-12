@@ -16,10 +16,6 @@
         </v-btn>
       </a>
     </template>
-
-    <router-link to="/" class="nt-app-bar-link">
-      <v-btn elevation="0">Home</v-btn>
-    </router-link>
   </v-app-bar>
 </template>
 

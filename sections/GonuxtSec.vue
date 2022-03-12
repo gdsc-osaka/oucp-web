@@ -3,7 +3,12 @@
     <v-divider class="my-6"></v-divider>
     <OupcSubSection1 />
     <OupcSubSection2 />
-    <OupctSubSection3 />
+    <OupcSubSection3 />
+    <OupcSubSection4 />
+    <OupcSubSection5 />
+    <OupcSubSection6 />
+    <OupcSubSection7 />
+    <OupcSubSection8 />
   </section>
 </template>
 <script scoped>

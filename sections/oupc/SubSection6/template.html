@@ -1,0 +1,22 @@
+<section class="gnt-sec-2">
+  <h2 class="font-weight-bold d-block">新入生へのメッセージ</h2>
+  <v-container fluid>
+    <v-row class="d-flex gont-tile-layout-template">
+      <v-col
+        cols="12"
+        md="6"
+        xl="6"
+        lg="6"
+        class="pa-md-5"
+        v-for="card in Cards2Col"
+        :key="card.title"
+      >
+        <MessageCard
+          :imgSrc="card.imgSrc"
+          :title="card.title"
+          :detail="card.detail"
+          :name="card.name"
+      /></v-col>
+    </v-row>
+  </v-container>
+</section>

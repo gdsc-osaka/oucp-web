@@ -1,0 +1,95 @@
+<section class="gnt-sec-2">
+  <h2 class="font-weight-bold d-block">メンバー紹介</h2>
+  <v-container>
+    <v-row>
+      <v-col cols="12">
+        <p style="text-align: center" class="text-h4 font-weight-bold">幹部</p>
+      </v-col>
+    </v-row>
+    <v-row class="d-flex justify-left align-center">
+      <v-col
+        cols="12"
+        xs="12"
+        sm="12"
+        md="12"
+        lg="6"
+        xl="6"
+        class="pa-md-5 gonuxt-tile"
+        v-for="member in members1"
+        :key="member.txtBody"
+      >
+        <MemberCard
+          :imgSrc="member.imgSrc"
+          :txtBody="member.txtBody"
+          :name="member.name"
+          :job="member.job"
+          :position="member.position"
+          :school="member.school"
+          :course="member.course"
+          :bgcolor="member.bgcolor"
+          imgSize="5rem"
+        />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <p style="text-align: center" class="text-h4 font-weight-bold">3回生</p>
+      </v-col>
+    </v-row>
+    <v-row class="d-flex justify-left align-center">
+      <v-col
+        cols="12"
+        xs="12"
+        sm="12"
+        md="12"
+        lg="6"
+        xl="6"
+        class="pa-md-5 gonuxt-tile"
+        v-for="member in members1"
+        :key="member.txtBody"
+      >
+        <MemberCard
+          :imgSrc="member.imgSrc"
+          :txtBody="member.txtBody"
+          :name="member.name"
+          :job="member.job"
+          :position="member.position"
+          :school="member.school"
+          :course="member.course"
+          :bgcolor="member.bgcolor"
+          imgSize="5rem"
+        />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <p style="text-align: center" class="text-h4 font-weight-bold">2回生</p>
+      </v-col>
+    </v-row>
+    <v-row class="d-flex justify-left align-center">
+      <v-col
+        cols="12"
+        xs="12"
+        sm="12"
+        md="12"
+        lg="6"
+        xl="6"
+        class="pa-md-5 gonuxt-tile"
+        v-for="member in members1"
+        :key="member.txtBody"
+      >
+        <MemberCard
+          :imgSrc="member.imgSrc"
+          :txtBody="member.txtBody"
+          :name="member.name"
+          :job="member.job"
+          :position="member.position"
+          :school="member.school"
+          :course="member.course"
+          :bgcolor="member.bgcolor"
+          imgSize="5rem"
+        />
+      </v-col>
+    </v-row>
+  </v-container>
+</section>

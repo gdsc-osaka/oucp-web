@@ -21,21 +21,20 @@
               >
                 <v-col
                   cols="12"
-                  class="white--text text-center pb-0 gnt-photo-card-text"
+                  class="white--text text-center font-weight-bold pb-0 gnt-photo-card-text"
                   :class="titleSize"
                   v-text="title"
                 ></v-col>
-                <v-col cols="12" class="d-flex justify-center pt-1 pb-6">
-                  <v-btn
-                    small
-                    color="white"
-                    elevation="0"
-                    rounded
-                    class="text--darken-2 gnt-photo-card-text"
-                    :class="getPopupTxtColor"
-                    >{{ txtButton }}</v-btn
-                  >
-                </v-col>
+              </v-row>
+              <v-row
+                v-if="hover"
+                class="transition-fast-in-fast-out v-card--reveal"
+              >
+                <v-col
+                  cols="12"
+                  class="white--text text-center gnt-photo-card-text"
+                  v-text="txtContents"
+                ></v-col>
               </v-row>
             </v-overlay>
           </v-fade-transition>
@@ -81,7 +80,7 @@ export default {
       type: String,
       default: '(txtBody) 2022-03-01開催',
     },
-    txtButton: {
+    txtContents: {
       type: String,
       default: 'See More',
     },
@@ -113,6 +112,7 @@ export default {
 .gnt-photo-card {
   .gnt-photo-card-text {
     text-decoration: none !important;
+    white-space: pre-wrap;
   }
 }
 </style>
