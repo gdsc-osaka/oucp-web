@@ -2,7 +2,9 @@
   <v-container>
     <v-row class="d-flex align-stretch">
       <v-col cols="12" sm="6">
-        <v-img :src="imgSrcs[1]" />
+        <transition name="fade" v-for="slide in Slides" :key="slide.id">
+          <img class="slide-img" :src="slide.img" />
+        </transition>
       </v-col>
       <v-col cols="12" sm="6" class="gnt-intro-a-contents">
         <h2 class="font-weight-bold d-block">大阪大学を盛り上げる</h2>
