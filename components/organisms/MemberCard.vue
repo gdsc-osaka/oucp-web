@@ -18,8 +18,11 @@
       <strong style="color: gray">{{ job }}</strong>
     </p>
     <p style="text-align: center" class="font-weight-bold">
-      <strong style="color: gray">所属・・・{{ course }}</strong
-      ><br />
+      <strong style="color: gray">{{ instrument }}</strong>
+    </p>
+    <p style="text-align: center" class="font-weight-bold">
+      <strong style="color: gray">所属・・・{{ course }}</strong>
+      <br />
       <strong style="color: gray">出身校・・・{{ school }}</strong>
     </p>
   </div>
@@ -61,6 +64,10 @@ export default {
     bgcolor: {
       type: String,
       default: '#ffffff',
+    },
+    instrument: {
+      type: String,
+      default: '',
     },
     imgSize: {
       type: String,
