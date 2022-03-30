@@ -1,6 +1,5 @@
 <template>
-  <section class="my-6 py-6">
-    <v-divider class="my-6"></v-divider>
+  <section class="mb-6 pb-6">
     <OupcSubSection1 />
     <OupcSubSection2 />
     <OupcSubSection3 />
