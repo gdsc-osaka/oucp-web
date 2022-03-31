@@ -1,0 +1,54 @@
+<section class="gnt-sec-2 mt-0 grey lighten-3">
+  <v-container fluid class="d-none d-md-block key-visual-container-pc">
+    <v-row class="d-flex align-stretch">
+      <v-spacer></v-spacer>
+      <v-col cols="12" sm="10" class="pa-0">
+        <transition name="fade" v-for="slide in Slides" :key="slide.id">
+          <img class="slide-img" :src="slide.img" height="30rem" />
+        </transition>
+      </v-col>
+    </v-row>
+
+    <v-sheet class="white pa-6 rounded-xl key-visual-text key-visual-text">
+      <h1 class="d-block primary--text text--darken-2">
+        大阪大学を<br />盛り上げる
+      </h1>
+      <p>
+        をモットーに、体育会の運動部さんの応援や、
+        イベント等において演舞を披露させていただいています。
+      </p>
+    </v-sheet>
+  </v-container>
+
+  <v-container fluid class="d-block d-md-none key-visual-container-sm">
+    <v-row class="justify-center key-visual-row">
+      <v-col cols="12" class="pa-0 key-visual-img">
+        <transition name="fade" v-for="slide in Slides" :key="slide.id">
+          <img class="slide-img" :src="slide.img" />
+        </transition>
+      </v-col>
+      <v-col cols="12" class="text-center px-6 key-visual-text">
+        <v-sheet class="white pa-3 rounded-xl">
+          <h1 class="d-block primary--text text--darken-2">
+            大阪大学を<br />盛り上げる
+          </h1>
+          <p>
+            をモットーに、体育会の運動部さんの応援や、
+            イベント等において演舞を披露させていただいています。
+          </p>
+        </v-sheet>
+      </v-col>
+    </v-row>
+  </v-container>
+
+  <v-container class="py-6">
+    <v-col cols="12" class="">
+      <p>
+        リーダー部、吹奏部、チアリーダー部の3部、計16名で活動しています。<br />
+        ほぼ全員が初心者で、学生時代にしかできないことをしたい、他大学で友達を作りたい..そんな人にオススメ⭐️
+        <br />
+        誰かを応援したいという気持ちさえあれば、誰でも大歓迎です！！
+      </p>
+    </v-col>
+  </v-container>
+</section>

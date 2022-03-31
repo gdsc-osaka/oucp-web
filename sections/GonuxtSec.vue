@@ -1,10 +1,13 @@
 <template>
-  <section class="my-6 py-6">
-    <v-divider class="my-6"></v-divider>
-    <h1>Gonuxt Section</h1>
-    <GonuxtSubSection1 />
-    <GonuxtSubSection2 />
-    <GonuxtSubSection3 />
+  <section class="mb-6 pb-6">
+    <OupcSubSection1 />
+    <OupcSubSection2 />
+    <OupcSubSection3 />
+    <OupcSubSection4 />
+    <OupcSubSection5 />
+    <OupcSubSection6 />
+    <OupcSubSection7 />
+    <OupcSubSection8 />
   </section>
 </template>
 <script scoped>

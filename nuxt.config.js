@@ -2,10 +2,10 @@
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        router: {
-          base: '/oupc-web/',
-        },
-      }
+      router: {
+        base: '/oupc-web/',
+      },
+    }
     : {}
 const faviconPath =
   process.env.DEPLOY_ENV === 'GH_PAGES'
@@ -82,6 +82,7 @@ export default {
       '~/gonuxt/components/molecules',
       '~/gonuxt/components/organisms',
       '~/components',
+      '~/components/molecules',
       '~/sections/',
     ],
   },
@@ -97,11 +98,20 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@/modules/custom-generate.js'],
+  modules: [
+    '@/modules/custom-generate.js',
+    'nuxt-webfontloader',
+  ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/styles/app.scss'],
+  },
+
+  webfontloader: {
+    google: {
+      families: ['Zen+Maru+Gothic:700,900', 'Kiwi+Maru:500']
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

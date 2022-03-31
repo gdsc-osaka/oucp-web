@@ -1,0 +1,74 @@
+<section class="gnt-sec-2">
+  <h2 class="font-weight-bold">新歓応募用Google Form</h2>
+  <v-container fluid>
+    <v-row class="d-flex justify-left align-center gont-tile-layout-template">
+      <v-col
+        cols="12"
+        xl="4"
+        lg="4"
+        md="4"
+        sm="12"
+        class="pa-md-3 gonuxt-tile"
+        v-for="tile in tiles1Col"
+        :key="tile.title"
+      >
+        <PhotoCard
+          :imgSrc="tile.imgSrc"
+          :title="tile.title"
+          :titleSize="tile.titleSize"
+          :txtPosition="tile.txtPosition"
+          :link="tile.link"
+          :txtBody="tile.txtBody"
+          :locate="tile.locate"
+          :txtContents="tile.txtContents"
+        />
+      </v-col>
+    </v-row>
+    <v-row class="d-flex justify-left align-center gont-tile-layout-template">
+      <v-col
+        cols="12"
+        xl="4"
+        lg="4"
+        md="4"
+        sm="12"
+        class="pa-md-3 gonuxt-tile"
+        v-for="tile in tiles2Col"
+        :key="tile.title"
+      >
+        <PhotoCard
+          :imgSrc="tile.imgSrc"
+          :title="tile.title"
+          :titleSize="tile.titleSize"
+          :txtPosition="tile.txtPosition"
+          :link="tile.link"
+          :txtBody="tile.txtBody"
+          :locate="tile.locate"
+          :txtContents="tile.txtContents"
+        />
+      </v-col>
+    </v-row>
+    <v-row class="d-flex justify-left align-center gont-tile-layout-template">
+      <v-col
+        cols="12"
+        xl="4"
+        lg="4"
+        md="4"
+        sm="12"
+        class="pa-md-3 gonuxt-tile"
+        v-for="tile in tiles3Col"
+        :key="tile.title"
+      >
+        <PhotoCard
+          :imgSrc="tile.imgSrc"
+          :title="tile.title"
+          :titleSize="tile.titleSize"
+          :txtPosition="tile.txtPosition"
+          :link="tile.link"
+          :txtBody="tile.txtBody"
+          :locate="tile.locate"
+          :txtContents="tile.txtContents"
+        />
+      </v-col>
+    </v-row>
+  </v-container>
+</section>
