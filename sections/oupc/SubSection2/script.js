@@ -5,7 +5,8 @@ export default {
       items: [
         {
           title: '履修登録相談会 ',
-          date: '4/2 19:00~ 4/3,4 10:00~/16:00~',
+          day: '4/2-4',
+          date: '4/2 19:00~ | 4/3,4 10:00~/16:00~',
           place: 'Zoom',
           detail:
             '「大学の授業ってどんな感じ？」「学問の扉って何？」「そもそも履修登録って何をどうすればいいの？」そんな疑問に応援団員がお答えします！',
@@ -13,6 +14,7 @@ export default {
         },
         {
           title: 'お花見',
+          day: '4/11,15',
           date: '4/11,15 16:00~',
           place: '豊中キャンパス',
           detail:
@@ -20,31 +22,17 @@ export default {
           link: 'https://docs.google.com/forms/u/0/',
         },
         {
-          title: '大阪観光ランニング',
-          date: '4/27 10:00~',
-          place: '大阪城周辺',
-          detail:
-            '大学入学を期に大阪に来た皆さん！体を動かしながら大阪観光しませんか？\n 終了後は好きな飲み物で喉を潤しましょう！',
-          link: 'https://docs.google.com/forms/u/0/',
-        },
-        {
           title: '女子会',
+          day: '4/11,18',
           date: '4/11,18 21:00~',
           place: 'Zoom',
           detail:
-            '女子団員とお話ししましょう🥰\n 大学周辺のオススメカフェやメイク法…何でも教えちゃいます😉💕\n お話ししたい女子集合！！',
-          link: 'https://docs.google.com/forms/u/0/',
-        },
-        {
-          title: 'ウォーキング会',
-          date: '4/20,22 16:30~',
-          place: '豊中キャンパス',
-          detail:
-            '豊中キャンパスには面白いスポットがいっぱい！ウォーキングしながら豊中キャンパスを探検してみませんか！？',
+            '女子団員とお話ししましょう🥰大学周辺のオススメカフェやメイク法…何でも教えちゃいます😉💕お話ししたい女子集合！！',
           link: 'https://docs.google.com/forms/u/0/',
         },
         {
           title: '箕面の滝散策会',
+          day: '4/17',
           date: '4/17 14:00~',
           place: '箕面大滝周辺',
           detail:
@@ -52,7 +40,26 @@ export default {
           link: 'https://docs.google.com/forms/u/0/',
         },
         {
+          title: 'ウォーキング会',
+          day: '4/20,22',
+          date: '4/20,22 16:30~',
+          place: '豊中キャンパス',
+          detail:
+            '豊中キャンパスには面白いスポットがいっぱい！ウォーキングしながら豊中キャンパスを探検してみませんか！？',
+          link: 'https://docs.google.com/forms/u/0/',
+        },
+        {
+          title: '大阪観光ランニング',
+          day: '4/27',
+          date: '4/27 10:00~',
+          place: '大阪城周辺',
+          detail:
+            '大学入学を期に大阪に来た皆さん！体を動かしながら大阪観光しませんか？\n 終了後は好きな飲み物で喉を潤しましょう！',
+          link: 'https://docs.google.com/forms/u/0/',
+        },
+        {
           title: '筋トレ会',
+          day: '4/27',
           date: '4/27 18:00~',
           place: '豊中キャンパス',
           detail:
