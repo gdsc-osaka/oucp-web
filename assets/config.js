@@ -1,7 +1,7 @@
 export default {
   brand: {
-    name: 'GoNuxt',
-    nameShort: 'GoNuxt Tutorial',
+    name: 'OUPC',
+    nameShort: 'OUPC Web site',
     footer: {
       links: [
         { icon: 'mdi-twitter', link: 'https://twitter.com/' },
