@@ -1,6 +1,7 @@
 <section class="gnt-sec-2">
-  <h2 class="font-weight-bold d-block">団員紹介</h2>
   <v-container>
+    <h2 class="font-weight-bold d-block">団員紹介</h2>
+
     <v-row class="d-flex justify-left align-start">
       <v-col cols="4">
         <v-row>
@@ -30,7 +31,7 @@
             xs="12"
             sm="12"
             md="12"
-            lg="6"
+            lg="12"
             xl="6"
             class="pa-md-5 gonuxt-tile"
             v-for="member in members1"
@@ -52,7 +53,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="d-flex justify-left align-start">
+    <v-row class="d-flex justify-left align-start grey darken-1">
       <v-col cols="4">
         <v-row>
           <v-col cols="12">
@@ -61,7 +62,7 @@
             </p>
           </v-col>
         </v-row>
-        <v-row class="d-flex align-center">
+        <v-row class="d-flex align-center grey lighten-2">
           <v-col cols="12" lg="6" xl="6">
             <v-img height="12rem" :src="imgSrc2" />
           </v-col>
@@ -80,8 +81,8 @@
             cols="12"
             xs="12"
             sm="12"
-            md="12"
-            lg="6"
+            md="9"
+            lg="12"
             xl="6"
             class="pa-md-5 gonuxt-tile"
             v-for="member in members2"
@@ -103,23 +104,25 @@
       </v-col>
     </v-row>
 
-    <v-row class="d-flex justify-left align-start">
+    <v-row class="d-flex justify-left align-stretch">
       <v-col cols="4">
-        <v-row>
-          <v-col cols="12">
-            <p style="text-align: center" class="text-h5 font-weight-bold">
-              吹奏部
-            </p>
-          </v-col>
-        </v-row>
-        <v-row class="d-flex align-center">
-          <v-col cols="12" lg="6" xl="6">
-            <v-img height="12rem" :src="imgSrc3" />
-          </v-col>
-          <v-col cols="12" lg="6" xl="6" class="font-weight-bold">
-            <p>楽器を用いた迫力のある演奏で、応援を盛り上げる部です！</p>
-          </v-col>
-        </v-row>
+        <v-sheet class="grey lighten-2 pa-3 rounded-l" style="height: 100%">
+          <v-row>
+            <v-col cols="12">
+              <p style="text-align: center" class="text-h5 font-weight-bold">
+                吹奏部
+              </p>
+            </v-col>
+          </v-row>
+          <v-row class="d-flex align-center">
+            <v-col cols="12">
+              <v-img height="12rem" :src="imgSrc3" />
+            </v-col>
+            <v-col cols="12" class="font-weight-bold">
+              <p>楽器を用いた迫力のある演奏で、応援を盛り上げる部です！</p>
+            </v-col>
+          </v-row>
+        </v-sheet>
       </v-col>
       <v-col cols="8">
         <v-row

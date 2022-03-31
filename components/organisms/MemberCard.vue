@@ -21,9 +21,9 @@
       <strong style="color: gray">{{ instrument }}</strong>
     </p>
     <p style="text-align: center" class="font-weight-bold">
-      <strong style="color: gray">所属・・・{{ course }}</strong>
+      <strong style="color: gray">{{ course }}</strong>
       <br />
-      <strong style="color: gray">出身校・・・{{ school }}</strong>
+      <strong style="color: gray">{{ school }}</strong>
     </p>
   </div>
 </template>

@@ -9,7 +9,7 @@
         <v-card>
           <v-card-text class="black--text text-left text-h5">
             <v-row>
-              <v-col cols="12" class="faq-content" v-text="answer"> </v-col>
+              <v-col cols="12" class="faq-content" v-html="answer"> </v-col>
             </v-row>
           </v-card-text>
         </v-card>
