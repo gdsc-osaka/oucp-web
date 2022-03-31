@@ -1,74 +1,50 @@
 <section class="gnt-sec-2">
-  <h2 class="font-weight-bold">新歓応募用Google Form</h2>
-  <v-container fluid>
-    <v-row class="d-flex justify-left align-center gont-tile-layout-template">
-      <v-col
-        cols="12"
-        xl="4"
-        lg="4"
-        md="4"
-        sm="12"
-        class="pa-md-3 gonuxt-tile"
-        v-for="tile in tiles1Col"
-        :key="tile.title"
-      >
-        <PhotoCard
-          :imgSrc="tile.imgSrc"
-          :title="tile.title"
-          :titleSize="tile.titleSize"
-          :txtPosition="tile.txtPosition"
-          :link="tile.link"
-          :txtBody="tile.txtBody"
-          :locate="tile.locate"
-          :txtContents="tile.txtContents"
-        />
-      </v-col>
-    </v-row>
-    <v-row class="d-flex justify-left align-center gont-tile-layout-template">
-      <v-col
-        cols="12"
-        xl="4"
-        lg="4"
-        md="4"
-        sm="12"
-        class="pa-md-3 gonuxt-tile"
-        v-for="tile in tiles2Col"
-        :key="tile.title"
-      >
-        <PhotoCard
-          :imgSrc="tile.imgSrc"
-          :title="tile.title"
-          :titleSize="tile.titleSize"
-          :txtPosition="tile.txtPosition"
-          :link="tile.link"
-          :txtBody="tile.txtBody"
-          :locate="tile.locate"
-          :txtContents="tile.txtContents"
-        />
-      </v-col>
-    </v-row>
-    <v-row class="d-flex justify-left align-center gont-tile-layout-template">
-      <v-col
-        cols="12"
-        xl="4"
-        lg="4"
-        md="4"
-        sm="12"
-        class="pa-md-3 gonuxt-tile"
-        v-for="tile in tiles3Col"
-        :key="tile.title"
-      >
-        <PhotoCard
-          :imgSrc="tile.imgSrc"
-          :title="tile.title"
-          :titleSize="tile.titleSize"
-          :txtPosition="tile.txtPosition"
-          :link="tile.link"
-          :txtBody="tile.txtBody"
-          :locate="tile.locate"
-          :txtContents="tile.txtContents"
-        />
-      </v-col>
-    </v-row>
-  </v-container>
+  <h2 class="font-weight-bold">新歓イベント</h2>
+  <v-sheet>
+    <v-slide-group multiple center-active>
+      <v-slide-item v-for="item in items" :key="item.title">
+        <v-card class="card-item" color="primary">
+          <v-row class="mx-auto my-auto" justify="center">
+            <v-sheet
+              class="card-item3"
+              color="primary darken-1"
+              justify="center"
+              elevation="2"
+            >
+              <v-row class="mx-auto my-auto" justify="start">
+                <v-card-title class="card-title text-h5 font-weight-bold mt-n1">
+                  <v-sheet
+                    class="rounded-lg mr-2 px-3 py-1 black--text"
+                    color="primary lighten-3"
+                  >
+                    4/1
+                  </v-sheet>
+                  <span class="mx-2"> {{ item.title }} </span>
+                </v-card-title>
+              </v-row>
+            </v-sheet>
+            <v-sheet
+              elevation="0"
+              class="card-item2"
+              color="primary lighten-1"
+              rounded
+            >
+              <v-card-text class="card-text">
+                <div class="font-weight-bold">
+                  日時：{{item.date}} <br />
+                  場所：{{item.place}} <br />
+                </div>
+                <div v-html="item.detail" class="mt-4"></div>
+              </v-card-text>
+            </v-sheet>
+            <v-card-actions>
+              <v-btn v-bind:href="item.link" color="error" target="_blank">
+                申し込みはこちらから
+              </v-btn>
+            </v-card-actions>
+          </v-row>
+        </v-card>
+      </v-slide-item>
+    </v-slide-group>
+  </v-sheet>
 </section>
