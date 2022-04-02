@@ -9,7 +9,7 @@
         <v-card>
           <v-card-text class="black--text text-left text-h5">
             <v-row>
-              <v-col cols="12" class="faq-content" v-text="answer"> </v-col>
+              <v-col cols="12" class="faq-content" v-html="answer"> </v-col>
             </v-row>
           </v-card-text>
         </v-card>
@@ -40,18 +40,18 @@ export default {
 .faq-header:before {
   background-color: deeppink;
   content: 'Q';
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .faq-content:before {
   background-color: blue;
   content: 'A';
-  margin-bottom: 32px;
+  margin-bottom: 90px;
 }
 
 .faq-content:before,
 .faq-header:before {
-  display: inline-flex;
+  display: flex;
   float: left;
   width: 40px;
   height: 40px;

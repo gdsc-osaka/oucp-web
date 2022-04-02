@@ -1,50 +1,58 @@
 <section class="gnt-sec-2">
-  <h2 class="font-weight-bold">新歓イベント</h2>
-  <v-sheet>
-    <v-slide-group multiple center-active>
-      <v-slide-item v-for="item in items" :key="item.title">
-        <v-card class="card-item" color="primary">
-          <v-row class="mx-auto my-auto" justify="center">
-            <v-sheet
-              class="card-item3"
-              color="primary darken-1"
-              justify="center"
-              elevation="2"
-            >
-              <v-row class="mx-auto my-auto" justify="start">
-                <v-card-title class="card-title text-h5 font-weight-bold mt-n1">
-                  <v-sheet
-                    class="rounded-lg mr-2 px-3 py-1 black--text"
-                    color="primary lighten-3"
+  <v-container>
+    <h3
+      class="font-weight-bold pb-4 primary--text text--darken-1 text-center text-h3"
+    >
+      新歓イベント
+    </h3>
+    <v-sheet>
+      <v-slide-group multiple center-active>
+        <v-slide-item v-for="item in items" :key="item.title">
+          <v-card class="card-item" color="primary">
+            <v-row class="mx-auto my-auto" justify="center">
+              <v-sheet
+                class="card-item3"
+                color="primary darken-1"
+                justify="center"
+                elevation="2"
+              >
+                <v-row class="mx-auto my-auto" justify="start">
+                  <v-card-title
+                    class="card-title text-h5 font-weight-bold mt-n1"
                   >
-                    {{item.day}}
-                  </v-sheet>
-                  <span class="mx-2"> {{ item.title }} </span>
-                </v-card-title>
-              </v-row>
-            </v-sheet>
-            <v-sheet
-              elevation="0"
-              class="card-item2"
-              color="primary lighten-1"
-              rounded
-            >
-              <v-card-text class="card-text">
-                <div class="font-weight-bold">
-                  日時：{{item.date}} <br />
-                  場所：{{item.place}} <br />
-                </div>
-                <div v-html="item.detail" class="mt-4"></div>
-              </v-card-text>
-            </v-sheet>
-            <v-card-actions>
-              <v-btn v-bind:href="item.link" color="error" target="_blank">
-                申し込みはこちらから
-              </v-btn>
-            </v-card-actions>
-          </v-row>
-        </v-card>
-      </v-slide-item>
-    </v-slide-group>
-  </v-sheet>
+                    <v-sheet
+                      class="rounded-lg mr-2 px-3 py-1 black--text"
+                      color="primary lighten-3"
+                    >
+                      {{item.day}}
+                    </v-sheet>
+                    <span class="mx-2"> {{ item.title }} </span>
+                  </v-card-title>
+                </v-row>
+              </v-sheet>
+              <v-sheet
+                elevation="0"
+                class="card-item2"
+                color="primary lighten-1"
+                rounded
+              >
+                <v-card-text class="card-text">
+                  <div class="font-weight-bold">
+                    日時：{{item.date}} <br />
+                    場所：{{item.place}} <br />
+                  </div>
+                  <div v-html="item.detail" class="mt-4"></div>
+                </v-card-text>
+              </v-sheet>
+              <v-card-actions>
+                <v-btn v-bind:href="item.link" color="error" target="_blank">
+                  申し込みはこちらから
+                </v-btn>
+              </v-card-actions>
+            </v-row>
+          </v-card>
+        </v-slide-item>
+      </v-slide-group>
+    </v-sheet>
+  </v-container>
 </section>

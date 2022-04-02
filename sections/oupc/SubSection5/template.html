@@ -1,8 +1,14 @@
 <section class="gnt-sec-2">
-  <h2 class="font-weight-bold d-block">Q&A</h2>
-  <v-row class="d-flex justify-left align-center gont-tile-layout-template">
-    <v-col cols="12" v-for="qa in questionAnswer" :key="qa.question">
-      <QuestionAnswer :question="qa.question" :answer="qa.answer" />
-    </v-col>
-  </v-row>
+  <v-container>
+    <h3
+      class="font-weight-bold d-block pb-4 primary--text text--darken-1 text-center text-h3"
+    >
+      Q&A
+    </h3>
+    <v-row class="d-flex justify-left align-center gont-tile-layout-template">
+      <v-col cols="12" v-for="qa in questionAnswer" :key="qa.question">
+        <QuestionAnswer :question="qa.question" :answer="qa.answer" />
+      </v-col>
+    </v-row>
+  </v-container>
 </section>

@@ -18,12 +18,15 @@ export default {
 
     footer: {
       links: [
-        { icon: 'mdi-twitter', link: 'https://twitter.com/' },
+        { icon: 'mdi-twitter', link: 'https://twitter.com/oucp60_shinkan' },
         {
           icon: 'mdi-instagram',
-          link: 'https://www.instagram.com/',
+          link: 'https://www.instagram.com/oucp61_shinkan/',
         },
-        { icon: 'mdi-github', link: 'https://github.com/gdsc-osaka' },
+        {
+          icon: 'mdi-youtube',
+          link: 'https://www.youtube.com/channel/UCZgxA7NqKHRBlIMOIeNvCcg',
+        },
       ],
     },
     copyrightInfo: {
