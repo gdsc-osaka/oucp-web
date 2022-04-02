@@ -19,7 +19,10 @@
     </p>
     <p style="text-align: center" class="font-weight-bold">
       <strong style="color: gray">{{ instrument }}</strong>
+      <br />
+      <strong style="color: gray">{{ subinstrument }}</strong>
     </p>
+
     <p style="text-align: center" class="font-weight-bold">
       <strong style="color: gray">{{ course }}</strong>
       <br />
@@ -66,6 +69,10 @@ export default {
       default: '#ffffff',
     },
     instrument: {
+      type: String,
+      default: '',
+    },
+    subinstrument: {
       type: String,
       default: '',
     },

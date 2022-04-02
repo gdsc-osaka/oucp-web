@@ -1,26 +1,32 @@
 <section class="gnt-sec-2">
   <v-container>
-    <h2 class="font-weight-bold d-block">団員紹介</h2>
+    <h3
+      class="font-weight-bold pb-4 d-block primary--text text--darken-1 text-center text-h3"
+    >
+      団員紹介
+    </h3>
 
-    <v-row class="d-flex justify-left align-start">
+    <v-row class="d-flex justify-left align-stretch">
       <v-col cols="4">
-        <v-row>
-          <v-col cols="12">
-            <p style="text-align: center" class="text-h5 font-weight-bold">
-              リーダー部
-            </p>
-          </v-col>
-        </v-row>
-        <v-row class="d-flex align-center">
-          <v-col cols="12" lg="6" xl="6">
-            <v-img height="12rem" :src="imgSrc1" />
-          </v-col>
-          <v-col cols="12" lg="6" xl="6" class="font-weight-bold">
-            <p>
-              拍手・声援を届けるバック、鼓手、旗手、そして独特な振りで応援を指揮するチーフに分かれ、応援を文字通りリードする部です。
-            </p>
-          </v-col>
-        </v-row>
+        <v-sheet class="pa-3 rounded-l" style="height: 100%">
+          <v-row>
+            <v-col cols="12">
+              <p style="text-align: center" class="text-h5 font-weight-bold">
+                リーダー部
+              </p>
+            </v-col>
+          </v-row>
+          <v-row class="d-flex align-center">
+            <v-col cols="12" lg="12" xl="12">
+              <v-img height="12rem" :src="imgSrc1" />
+            </v-col>
+            <v-col cols="12" lg="12" xl="12" class="font-weight-bold">
+              <p>
+                拍手・声援を届けるバック、鼓手、旗手、そして独特な振りで応援を指揮するチーフに分かれ、応援を文字通りリードする部です。
+              </p>
+            </v-col>
+          </v-row>
+        </v-sheet>
       </v-col>
       <v-col cols="8">
         <v-row
@@ -53,26 +59,28 @@
       </v-col>
     </v-row>
 
-    <v-row class="d-flex justify-left align-start grey darken-1">
+    <v-row class="d-flex justify-left align-stretch">
       <v-col cols="4">
-        <v-row>
-          <v-col cols="12">
-            <p style="text-align: center" class="text-h5 font-weight-bold">
-              チアリーダー部
-            </p>
-          </v-col>
-        </v-row>
-        <v-row class="d-flex align-center grey lighten-2">
-          <v-col cols="12" lg="6" xl="6">
-            <v-img height="12rem" :src="imgSrc2" />
-          </v-col>
-          <v-col cols="12" lg="6" xl="6" class="font-weight-bold">
-            <p>
-              笑顔とダンスで応援に華を添え、応援のエネルギーを全身で表現できる部です！
-            </p>
-          </v-col>
-        </v-row></v-col
-      >
+        <v-sheet class="pa-3 rounded-l" style="height: 100%">
+          <v-row>
+            <v-col cols="12">
+              <p style="text-align: center" class="text-h5 font-weight-bold">
+                チアリーダー部
+              </p>
+            </v-col>
+          </v-row>
+          <v-row class="d-flex align-center">
+            <v-col cols="12" lg="12" xl="12">
+              <v-img height="12rem" :src="imgSrc2" />
+            </v-col>
+            <v-col cols="12" lg="12" xl="12" class="font-weight-bold">
+              <p>
+                笑顔とダンスで応援に華を添え、応援のエネルギーを全身で表現できる部です！
+              </p>
+            </v-col>
+          </v-row>
+        </v-sheet>
+      </v-col>
       <v-col cols="8">
         <v-row
           class="d-flex justify-left flex-nowrap overflow-auto align-center"
@@ -81,7 +89,7 @@
             cols="12"
             xs="12"
             sm="12"
-            md="9"
+            md="12"
             lg="12"
             xl="6"
             class="pa-md-5 gonuxt-tile"
@@ -106,7 +114,7 @@
 
     <v-row class="d-flex justify-left align-stretch">
       <v-col cols="4">
-        <v-sheet class="grey lighten-2 pa-3 rounded-l" style="height: 100%">
+        <v-sheet class="pa-3 rounded-l" style="height: 100%">
           <v-row>
             <v-col cols="12">
               <p style="text-align: center" class="text-h5 font-weight-bold">
@@ -133,7 +141,7 @@
             xs="12"
             sm="12"
             md="12"
-            lg="6"
+            lg="12"
             xl="6"
             class="pa-md-5 gonuxt-tile"
             v-for="member in members3"
@@ -148,6 +156,7 @@
               :school="member.school"
               :course="member.course"
               :instrument="member.instrument"
+              :subinstrument="member.subinstrument"
               :bgcolor="member.bgcolor"
               imgSize="12rem"
             />

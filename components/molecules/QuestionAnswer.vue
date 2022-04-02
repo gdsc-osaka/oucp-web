@@ -40,18 +40,18 @@ export default {
 .faq-header:before {
   background-color: deeppink;
   content: 'Q';
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .faq-content:before {
   background-color: blue;
   content: 'A';
-  margin-bottom: 32px;
+  margin-bottom: 90px;
 }
 
 .faq-content:before,
 .faq-header:before {
-  display: inline-flex;
+  display: flex;
   float: left;
   width: 40px;
   height: 40px;
