@@ -5,7 +5,7 @@
     >
       Q&A
     </h3>
-    <v-row class="d-flex justify-left align-center gont-tile-layout-template">
+    <v-row class="d-flex justify-left align-center">
       <v-col cols="12" v-for="qa in questionAnswer" :key="qa.question">
         <QuestionAnswer :question="qa.question" :answer="qa.answer" />
       </v-col>

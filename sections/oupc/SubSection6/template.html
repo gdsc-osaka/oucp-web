@@ -4,7 +4,7 @@
       <h3
         class="font-weight-bold mb-3 pb-4 primary--text text--darken-1 text-center text-h3"
       >
-        新入生へのメッセージ
+        新入生へ<br class="br-disp" />メッセージ
       </h3>
     </div>
     <v-row>
@@ -25,9 +25,13 @@
                       <v-img
                         :src="item.src"
                         aspect-ratio="1"
-                        class="rounded-sm"
+                        class="rounded-sm text-center"
                       ></v-img>
                     </div>
+                    <div
+                      class="text-center font-weight-bold text-md-subtitle-2 txt1"
+                      v-text="click"
+                    ></div>
                   </v-col>
 
                   <v-col cols="8" class="d-flex align-center flex-column">

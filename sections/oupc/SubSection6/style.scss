@@ -1,1 +1,11 @@
 @import '@/assets/styles/app';
+
+.txt1 {
+  font-size: 1vw;
+}
+
+@media screen and (min-width: 600px) {
+  .br-disp {
+    display: none;
+  }
+}

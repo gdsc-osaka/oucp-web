@@ -5,8 +5,9 @@
     >
       新歓イベント
     </h3>
+
     <v-sheet>
-      <v-slide-group multiple center-active>
+      <v-slide-group multiple center-active show-arrows>
         <v-slide-item v-for="item in items" :key="item.title">
           <v-card class="card-item" color="primary">
             <v-row class="mx-auto my-auto" justify="center">
@@ -26,7 +27,8 @@
                     >
                       {{item.day}}
                     </v-sheet>
-                    <span class="mx-2"> {{ item.title }} </span>
+
+                    <div class="mx-2">{{ item.title }}</div>
                   </v-card-title>
                 </v-row>
               </v-sheet>

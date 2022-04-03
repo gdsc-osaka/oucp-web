@@ -8,22 +8,22 @@
 
 .card-item {
   margin: 0 10px 0 10px;
-  width: 360px;
-  height: 320px;
+  max-width: 360px;
+  max-height: 320px;
 }
 
 .card-item2 {
   elevation: 0;
   margin: 10px 10px 10px 10px;
-  width: 340px;
-  height: 180px;
+  max-width: 340px;
+  max-height: 180px;
 }
 
 .card-item3 {
   elevation: 0;
   margin: 0 0 0 0;
-  width: 360px;
-  height: 60px;
+  max-width: 360px;
+  max-height: 60px;
 }
 
 .card-text {
@@ -41,6 +41,11 @@
 }
 
 .sheet-item1 {
-  width: 70px;
-  height: 40px;
+  max-width: 70px;
+  max-height: 40px;
+}
+
+.sheet-item0 {
+  max-width: 100%;
+  max-height: 100%;
 }

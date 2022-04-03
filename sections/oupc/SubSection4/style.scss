@@ -18,3 +18,8 @@
   text-align: center;
   marigin: 0 auto;
 }
+@media screen and (min-width: 600px) {
+  .br-disp {
+    display: none;
+  }
+}

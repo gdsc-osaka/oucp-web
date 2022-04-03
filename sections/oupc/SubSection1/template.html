@@ -4,7 +4,7 @@
       <v-spacer></v-spacer>
       <v-col cols="12" sm="10" class="pa-0">
         <transition name="fade" v-for="slide in Slides" :key="slide.id">
-          <img class="slide-img" :src="slide.img" height="30rem" />
+          <img class="slide-img" :src="slide.img" max-height="30rem" />
         </transition>
       </v-col>
     </v-row>
