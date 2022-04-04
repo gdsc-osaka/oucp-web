@@ -5,9 +5,9 @@
     </h3>
 
     <v-sheet>
-      <v-slide-group multiple center-active show-arrows>
+      <v-slide-group mobile-breakpoint="700">
         <v-slide-item v-for="item in items" :key="item.title">
-          <v-card class="card-item primary" color="primary">
+          <v-card class="card-item" color="primary">
             <v-row class="mx-auto my-auto" justify="center">
               <v-sheet
                 class="card-item3"
@@ -17,10 +17,10 @@
               >
                 <v-row class="mx-auto my-auto" justify="start">
                   <v-card-title
-                    class="card-title text-h5 font-weight-bold mt-n1"
+                    class="card-title text-xm-h5 text-xs-h6 font-weight-bold mt-n1"
                   >
                     <v-sheet
-                      class="rounded-lg mr-2 px-3 py-1 black--text"
+                      class="rounded-lg mr-1 px-2 py-1 black--text"
                       color="secondary lighten-1"
                     >
                       {{item.day}}
