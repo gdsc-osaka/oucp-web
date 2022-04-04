@@ -1,5 +1,5 @@
 export default {
-  name: 'SubSeciton2',
+  name: 'QASection',
   data: () => ({
     questionAnswer: [],
   }),
