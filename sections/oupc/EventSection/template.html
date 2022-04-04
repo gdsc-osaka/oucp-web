@@ -1,15 +1,13 @@
 <section class="gnt-sec-2">
   <v-container>
-    <h3
-      class="font-weight-bold pb-4 primary--text text--darken-1 text-center text-h3"
-    >
+    <h3 class="font-weight-bold pb-4 primary--text text-center text-h3">
       新歓イベント
     </h3>
 
     <v-sheet>
       <v-slide-group multiple center-active show-arrows>
         <v-slide-item v-for="item in items" :key="item.title">
-          <v-card class="card-item" color="primary">
+          <v-card class="card-item primary" color="primary">
             <v-row class="mx-auto my-auto" justify="center">
               <v-sheet
                 class="card-item3"
@@ -23,7 +21,7 @@
                   >
                     <v-sheet
                       class="rounded-lg mr-2 px-3 py-1 black--text"
-                      color="primary lighten-3"
+                      color="secondary lighten-1"
                     >
                       {{item.day}}
                     </v-sheet>

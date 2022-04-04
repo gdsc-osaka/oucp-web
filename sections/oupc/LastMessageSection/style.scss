@@ -1,0 +1,9 @@
+.border-1 {
+  border-radius: 100px;
+}
+
+@media screen and (min-width: 600px) {
+  .br-disp {
+    display: none;
+  }
+}

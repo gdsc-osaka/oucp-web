@@ -1,7 +1,7 @@
 import MemberCard from '@/components/organisms/MemberCard.vue'
 
 export default {
-  name: 'SubSection7',
+  name: 'MemberSection',
   components: { MemberCard },
   data: () => ({
     imgSrc1: require('@/assets/oupc/img/leader.jpg'),

@@ -2,10 +2,10 @@
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-      router: {
-        base: '/oupc-web/',
-      },
-    }
+        router: {
+          base: '/oupc-web/',
+        },
+      }
     : {}
 const faviconPath =
   process.env.DEPLOY_ENV === 'GH_PAGES'
@@ -98,20 +98,32 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@/modules/custom-generate.js',
-    'nuxt-webfontloader',
-  ],
+  modules: ['@/modules/custom-generate.js', 'nuxt-webfontloader'],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/styles/app.scss'],
+    theme: {
+      themes: {
+        light: {
+          primary: '#0d47a1',
+          secondary: '#039be5',
+          complement: '#ffcc45',
+          analogous: '#0c7e89',
+          tiadic: '#a10d48',
+
+          accent: '#e84435',
+          warning: '#fbbc04',
+          success: '#0f9d58',
+        },
+      },
+    },
   },
 
   webfontloader: {
     google: {
-      families: ['Zen+Maru+Gothic:700,900', 'Kiwi+Maru:500']
-    }
+      families: ['Zen+Maru+Gothic:700,900', 'Kiwi+Maru:500'],
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
