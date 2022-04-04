@@ -1,5 +1,5 @@
 export default {
-  name: 'SubSection2',
+  name: 'EventSection',
   data() {
     return {
       items: [

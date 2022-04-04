@@ -1,5 +1,5 @@
 export default {
-  name: 'SubSection1',
+  name: 'TopSection',
   data() {
     return {
       currentSlide: 0,
