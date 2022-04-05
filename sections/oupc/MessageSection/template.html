@@ -23,24 +23,24 @@
                       <v-img
                         :src="item.src"
                         aspect-ratio="1"
-                        class="rounded-sm text-center"
+                        class="rounded-sm text-center mb-1"
                       ></v-img>
+                      <div
+                        class="text-center font-weight-bold txt3 font-txt"
+                        v-text="click"
+                      ></div>
                     </div>
-                    <div
-                      class="text-center font-weight-bold text-md-subtitle-2 txt1"
-                      v-text="click"
-                    ></div>
                   </v-col>
 
                   <v-col cols="8" class="d-flex align-center flex-column">
                     <v-card-title
                       v-text="item.title"
-                      class="card-title mt-auto font-weight-bold text-md-h6 text-subtitle-2"
+                      class="card-title mt-auto font-weight-bold txt1 font-txt"
                     ></v-card-title>
 
                     <v-card-subtitle
                       v-text="item.name"
-                      class="mt-auto font-weight-bold text-md-subtitle-2 text-caption"
+                      class="mt-auto font-weight-bold txt2 font-txt"
                     ></v-card-subtitle>
                   </v-col>
                 </v-row>
@@ -49,7 +49,9 @@
           </template>
 
           <v-card>
-            <v-card-title class="text-h5 accent lighten-2">
+            <v-card-title
+              class="text-h5 text-center secondary lighten-2 font-txt"
+            >
               {{ modalTitle }}
             </v-card-title>
 

@@ -14,7 +14,7 @@ export default {
         job: '団長・広報',
         position: '幹部',
         school: '大阪府私立開明',
-        course: '外国語学部ドイツ語専攻',
+        course: '外/ドイツ語',
         imgSrc: require('@/assets/oupc/img/member/person10.JPG'),
       },
 
@@ -24,7 +24,7 @@ export default {
         job: 'リーダー部長・渉外',
         position: '幹部',
         school: '岡山県立倉敷青陵',
-        course: '工学部応用自然科学科',
+        course: '工/応用自然科学',
         imgSrc: require('@/assets/oupc/img/member/person12.JPG'),
       },
       {
@@ -33,7 +33,7 @@ export default {
         job: '',
         position: '準幹部',
         school: '愛知県立明和',
-        course: '文学部人文地理学専修',
+        course: '文/人地理',
         imgSrc: require('@/assets/oupc/img/member/person2.png'),
       },
     ],
@@ -44,7 +44,7 @@ export default {
         job: '副団長・主務',
         position: '幹部',
         school: '大分県立大分上野丘',
-        course: '外国語学部インドネシア語専攻',
+        course: '外/インドネシア語',
         imgSrc: require('@/assets/oupc/img/member/person11.JPG'),
       },
       {
@@ -53,7 +53,7 @@ export default {
         job: 'チアリーダー部長・渉内',
         position: '幹部',
         school: '山口県立宇部',
-        course: '外国語学部アラビア語専攻',
+        course: '外/アラビア語',
         imgSrc: require('@/assets/oupc/img/member/person9.JPG'),
       },
 
@@ -63,7 +63,7 @@ export default {
         job: '統制',
         position: '幹部',
         school: '京都府私立大谷',
-        course: '外国語学部ロシア語専攻',
+        course: '外/ロシア語',
         imgSrc: require('@/assets/oupc/img/member/person13.JPG'),
       },
       {
@@ -72,7 +72,7 @@ export default {
         job: '',
         position: '準幹部　',
         school: '兵庫県立神戸',
-        course: '経済学部経済経営学科',
+        course: '経/経済・経営',
         imgSrc: require('@/assets/oupc/img/member/person1.JPG'),
       },
       {
@@ -81,7 +81,7 @@ export default {
         job: '',
         position: '準幹部',
         school: '滋賀県立膳所',
-        course: '工学部応用理工学科',
+        course: '工/応用理工',
         imgSrc: require('@/assets/oupc/img/member/person3.JPG'),
       },
       {
@@ -90,7 +90,7 @@ export default {
         job: '',
         position: '二回生',
         school: '兵庫県神戸大学附属中等教育学校',
-        course: '法学部国際公共政策学科',
+        course: '法/国共',
         imgSrc: require('@/assets/oupc/img/member/person6.JPG'),
       },
       {
@@ -99,7 +99,7 @@ export default {
         job: '',
         position: '二回生',
         school: '兵庫県立姫路西',
-        course: '外国語学部ドイツ語専攻',
+        course: '外/ドイツ語',
         imgSrc: require('@/assets/oupc/img/member/person7.JPG'),
       },
     ],
@@ -111,7 +111,7 @@ export default {
         position: '幹部',
         instrument: 'トランペット',
         school: '愛知県立津島',
-        course: '人間科学部人間科学科',
+        course: '人/人科',
 
         imgSrc: require('@/assets/oupc/img/member/person14.JPG'),
       },
@@ -123,7 +123,7 @@ export default {
         instrument: 'パーカッション',
         subinstrument: 'トロンボーン',
         school: '大阪府私立関西大学高等部',
-        course: '法学部国際公共政策学科',
+        course: '法/国共',
         imgSrc: require('@/assets/oupc/img/member/person4.JPG'),
       },
       {
@@ -133,7 +133,7 @@ export default {
         position: '幹部',
         instrument: 'トロンボーン',
         school: '愛知県立西春',
-        course: '外国語学部日本語専攻',
+        course: '外/日本語',
         imgSrc: require('@/assets/oupc/img/member/person8.JPG'),
       },
       {
@@ -143,7 +143,7 @@ export default {
         position: '二回生',
         instrument: 'スーザフォン',
         school: 'Hoffman Estates High School',
-        course: '外国語学部フランス語専攻',
+        course: '外/フランス語',
         imgSrc: require('@/assets/oupc/img/member/person5.JPG'),
       },
       {
@@ -153,7 +153,7 @@ export default {
         position: '二回生',
         instrument: 'トランペット',
         school: '岡山県立倉敷天城',
-        course: '外国語学部アラビア語専攻',
+        course: '外/アラビア語',
         imgSrc: require('@/assets/oupc/img/member/person15.JPG'),
       },
     ],
