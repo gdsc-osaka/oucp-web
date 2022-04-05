@@ -6,24 +6,38 @@
   }
 }
 
+$breakPoint: 600px;
+
 .card-item {
   margin: 0 10px 0 10px;
-  max-width: 360px;
-  max-height: 320px;
+  width: 360px;
+  height: 320px;
+  @media only screen and (max-width: $breakPoint) {
+    width: 300px;
+    height: 350px;
+  }
 }
 
 .card-item2 {
   elevation: 0;
   margin: 10px 10px 10px 10px;
-  max-width: 340px;
-  max-height: 180px;
+  width: 340px;
+  height: 180px;
+  @media only screen and (max-width: $breakPoint) {
+    width: 280px;
+    height: 210px;
+  }
 }
 
 .card-item3 {
   elevation: 0;
   margin: 0 0 0 0;
-  max-width: 360px;
-  max-height: 60px;
+  width: 360px;
+  height: 60px;
+  @media only screen and (max-width: $breakPoint) {
+    width: 300px;
+    height: 60px;
+  }
 }
 
 .card-text {
@@ -41,11 +55,6 @@
 }
 
 .sheet-item1 {
-  max-width: 70px;
-  max-height: 40px;
-}
-
-.sheet-item0 {
-  max-width: 100%;
-  max-height: 100%;
+  width: 70px;
+  height: 40px;
 }
