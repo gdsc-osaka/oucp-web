@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-5 py-2 px-5" :style="'background-color:' + bgcolor">
+  <div class="pa-sheet" style="background-color: ">
     <p>
       <v-img
         :src="imgSrc"
@@ -9,22 +9,30 @@
       ></v-img>
     </p>
 
-    <p style="text-align: center" class="font-weight-bold">
+    <div style="text-align: center" class="font-weight-bold">
       <strong>{{ name }}</strong>
-    </p>
-    <p style="text-align: center" class="font-weight-bold">
+    </div>
+
+    <div style="text-align: center" class="font-weight-bold">
       <strong style="color: gray">{{ position }}</strong>
-      <br />
-      <strong style="color: gray">{{ job }}</strong>
-    </p>
-    <p style="text-align: center" class="font-weight-bold">
+    </div>
+    <div style="text-align: center" class="font-weight-bold">
+      <strong style="color: gray">{{ job }}<br /></strong>
+    </div>
+
+    <div style="text-align: center" class="font-weight-bold">
       <strong style="color: gray">{{ instrument }}</strong>
-    </p>
-    <p style="text-align: center" class="font-weight-bold">
-      <strong style="color: gray">所属・・・{{ course }}</strong>
-      <br />
-      <strong style="color: gray">出身校・・・{{ school }}</strong>
-    </p>
+    </div>
+    <div style="text-align: center" class="font-weight-bold">
+      <strong style="color: gray">{{ subinstrument }}<br /></strong>
+    </div>
+
+    <div style="text-align: center" class="font-weight-bold">
+      <strong style="color: gray">{{ course }}</strong>
+    </div>
+    <div style="text-align: center" class="font-weight-bold">
+      <strong style="color: gray">{{ school }}</strong>
+    </div>
   </div>
 </template>
 
@@ -63,9 +71,13 @@ export default {
     },
     bgcolor: {
       type: String,
-      default: '#ffffff',
+      default: '#fffff0',
     },
     instrument: {
+      type: String,
+      default: '',
+    },
+    subinstrument: {
       type: String,
       default: '',
     },
@@ -83,5 +95,8 @@ export default {
 .img {
   display: block;
   margin: auto;
+}
+.pa-sheet {
+  padding: 10px;
 }
 </style>

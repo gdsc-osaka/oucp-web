@@ -1,0 +1,65 @@
+<section class="pb-4 grey lighten-4">
+  <v-container>
+    <div class="mb-8">
+      <h3 class="font-weight-bold mb-3 pb-4 primary--text text-center text-h3">
+        新入生へ<br class="br-disp" />メッセージ
+      </h3>
+    </div>
+    <v-row>
+      <v-col v-for="(item, i) in items" :key="i" cols="12" sm="12" md="6">
+        <v-dialog v-model="dialog" width="500">
+          <template v-slot:activator="{ on, attrs }">
+            <v-hover v-slot="{ hover }">
+              <v-card
+                :color="hover ? item.color : 'white'"
+                elevation="4"
+                v-bind="attrs"
+                v-on="on"
+                @click="openModal(item)"
+                class="border-0"
+              >
+                <v-row justify="space-between" class="text-center" dense>
+                  <v-col cols="4">
+                    <div class="ma-3">
+                      <v-img
+                        :src="item.src"
+                        aspect-ratio="1"
+                        class="rounded-sm text-center mb-1"
+                      ></v-img>
+                      <div
+                        class="text-center tiadic--text font-weight-bold txt3 font-txt mt-2"
+                        v-text="click"
+                      ></div>
+                    </div>
+                  </v-col>
+
+                  <v-col cols="8" class="d-flex align-center flex-column">
+                    <v-card-title
+                      v-text="item.title"
+                      class="card-title mt-auto font-weight-bold txt1 font-txt"
+                    ></v-card-title>
+
+                    <v-card-subtitle
+                      v-text="item.name"
+                      class="mt-auto font-weight-bold txt2 font-txt"
+                    ></v-card-subtitle>
+                  </v-col>
+                </v-row>
+              </v-card>
+            </v-hover>
+          </template>
+
+          <v-card>
+            <v-card-title
+              class="text-h5 text-center secondary lighten-2 font-txt"
+            >
+              {{ modalTitle }}
+            </v-card-title>
+
+            <v-card-text class="pt-3"> {{ modalText }} </v-card-text>
+          </v-card>
+        </v-dialog>
+      </v-col>
+    </v-row>
+  </v-container>
+</section>

@@ -1,0 +1,49 @@
+<section class="mt-0 pb-4 grey lighten-3">
+  <v-container fluid class="d-none d-md-block key-visual-container-pc">
+    <v-row class="d-flex align-stretch">
+      <v-spacer></v-spacer>
+      <v-col cols="12" sm="10" class="pa-0">
+        <transition name="fade" v-for="slide in Slides" :key="slide.id">
+          <img class="slide-img" :src="slide.img" max-height="30rem" />
+        </transition>
+      </v-col>
+    </v-row>
+
+    <v-sheet class="white pa-6 rounded-xl key-visual-text">
+      <h1 class="d-block primary--text">大阪大学を<br />盛り上げる</h1>
+      <p>
+        をモットーに体育会の運動部の応援や<br />学校内外のイベント等において<br />演舞を
+        披露させていただいています。<br />
+        リーダー部、吹奏部、チアリーダー部<br />の3部、16名で活動しています。
+      </p>
+      <p class="d-block font-weight-bold tiadic--text text--lighten-3 text-h4">
+        初心者大歓迎！!
+      </p>
+    </v-sheet>
+  </v-container>
+
+  <v-container fluid class="d-block d-md-none key-visual-container-sm">
+    <v-row class="justify-center key-visual-row">
+      <v-col cols="12" class="pa-0 key-visual-img">
+        <transition name="fade" v-for="slide in Slides" :key="slide.id">
+          <img class="slide-img" :src="slide.img" />
+        </transition>
+      </v-col>
+      <v-col cols="12" class="text-center px-6 key-visual-text">
+        <v-sheet class="white pa-3 rounded-xl">
+          <h2 class="d-block primary--text">大阪大学を<br />盛り上げる</h2>
+          <p class="d-block">
+            をモットーに<br />体育会の運動部の応援や<br />
+            学内外のイベント等において<br />演舞を披露しています。<br />
+            リーダー部<br />吹奏部<br />チアリーダー部<br />の3部・16名で活動しています。
+          </p>
+          <p
+            class="d-block font-weight-bold tiadic--text text--lighten-3 text-h5"
+          >
+            初心者大歓迎！!
+          </p>
+        </v-sheet>
+      </v-col>
+    </v-row>
+  </v-container>
+</section>

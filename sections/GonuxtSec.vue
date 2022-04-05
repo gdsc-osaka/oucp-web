@@ -1,13 +1,13 @@
 <template>
   <section class="mb-6 pb-6">
-    <OupcSubSection1 />
-    <OupcSubSection2 />
-    <OupcSubSection3 />
-    <OupcSubSection4 />
-    <OupcSubSection5 />
-    <OupcSubSection6 />
-    <OupcSubSection7 />
-    <OupcSubSection8 />
+    <OupcTopSection />
+    <OupcEventSection />
+    <OupcMessageSection />
+    <OupcMemberSection />
+    <OupcQASection />
+    <OupcScheduleSection />
+    <OupcLastMessageSection />
+    <OupcAccessSection />
   </section>
 </template>
 <script scoped>

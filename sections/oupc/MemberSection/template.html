@@ -1,0 +1,171 @@
+<section class="pb-4 grey lighten-3">
+  <v-container>
+    <h3 class="font-weight-bold pb-4 d-block primary--text text-center text-h3">
+      団員紹介
+    </h3>
+
+    <v-row class="d-flex justify-left align-stretch">
+      <v-col cols="12" md="4" class="grey lighten-3">
+        <v-sheet class="rounded-l" style="height: 100%">
+          <v-row>
+            <v-col cols="12">
+              <p style="text-align: center" class="text-h5 font-weight-bold">
+                リーダー部
+              </p>
+            </v-col>
+          </v-row>
+          <v-row class="d-flex align-stretch">
+            <v-col cols="12" lg="12" xl="12">
+              <v-img class="img-box" aspect-ratio="1.5" :src="imgSrc1" />
+            </v-col>
+            <v-col cols="12" class="pl-10 pr-10 font-weight-bold text-center">
+              <p>
+                拍手・声援を届けるバック、鼓手、旗手、そして独特な振りで応援を指揮するチーフに分かれ、応援を文字通りリードする部です。
+              </p>
+            </v-col>
+          </v-row>
+        </v-sheet>
+      </v-col>
+      <v-col cols="12" md="8" class="grey lighten-3">
+        <v-row
+          class="d-flex justify-left flex-nowrap overflow-auto align-center white mb-3 ml-0 mr-0"
+        >
+          <v-col
+            cols="8"
+            xs="8"
+            sm="8"
+            md="8"
+            lg="8"
+            xl="6"
+            class=""
+            v-for="member in members1"
+            :key="member.txtBody"
+          >
+            <MemberCard
+              :imgSrc="member.imgSrc"
+              :txtBody="member.txtBody"
+              :name="member.name"
+              :job="member.job"
+              :position="member.position"
+              :school="member.school"
+              :course="member.course"
+              :bgcolor="member.bgcolor"
+              imgSize="12rem"
+            />
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+
+    <v-row class="d-flex justify-left align-stretch">
+      <v-col cols="12" md="4" class="grey lighten-3">
+        <v-sheet class="rounded-l" style="height: 100%">
+          <v-row>
+            <v-col cols="12">
+              <p style="text-align: center" class="text-h5 font-weight-bold">
+                チアリーダー部
+              </p>
+            </v-col>
+          </v-row>
+          <v-row class="d-flex align-center">
+            <v-col cols="12" lg="12" xl="12">
+              <v-img class="img-box" aspect-ratio="1" :src="imgSrc2" />
+            </v-col>
+            <v-col
+              cols="12"
+              lg="12"
+              xl="12"
+              class="pl-10 pr-10 font-weight-bold text-center"
+            >
+              <p>
+                笑顔とダンスで応援に華を添え、応援のエネルギーを全身で表現できる部です！
+              </p>
+            </v-col>
+          </v-row>
+        </v-sheet>
+      </v-col>
+      <v-col cols="12" md="8" class="grey lighten-3">
+        <v-row
+          class="d-flex justify-left flex-nowrap overflow-auto align-center mb-3 ml-0 mr-0 white"
+        >
+          <v-col
+            cols="8"
+            xs="8"
+            sm="8"
+            md="8"
+            lg="8"
+            xl="6"
+            class=""
+            v-for="member in members2"
+            :key="member.txtBody"
+          >
+            <MemberCard
+              :imgSrc="member.imgSrc"
+              :txtBody="member.txtBody"
+              :name="member.name"
+              :job="member.job"
+              :position="member.position"
+              :school="member.school"
+              :course="member.course"
+              :bgcolor="member.bgcolor"
+              imgSize="12rem"
+            />
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+
+    <v-row class="d-flex justify-left align-stretch">
+      <v-col cols="12" md="4" class="grey lighten-3">
+        <v-sheet class="rounded-l" style="height: 100%">
+          <v-row>
+            <v-col cols="12">
+              <p style="text-align: center" class="text-h5 font-weight-bold">
+                吹奏部
+              </p>
+            </v-col>
+          </v-row>
+          <v-row class="d-flex align-center">
+            <v-col cols="12" class="">
+              <v-img class="img-box" aspect-ratio="1" :src="imgSrc3" />
+            </v-col>
+            <v-col cols="12" class="pl-10 pr-10 font-weight-bold text-center">
+              <p>楽器を用いた迫力のある演奏で、応援を盛り上げる部です！</p>
+            </v-col>
+          </v-row>
+        </v-sheet>
+      </v-col>
+      <v-col cols="12" md="8" class="grey lighten-3">
+        <v-row
+          class="d-flex justify-left flex-nowrap overflow-auto align-center mb-3 ml-0 mr-0 white"
+        >
+          <v-col
+            cols="8"
+            xs="8"
+            sm="8"
+            md="8"
+            lg="8"
+            xl="6"
+            class=""
+            v-for="member in members3"
+            :key="member.txtBody"
+          >
+            <MemberCard
+              :imgSrc="member.imgSrc"
+              :txtBody="member.txtBody"
+              :name="member.name"
+              :job="member.job"
+              :position="member.position"
+              :school="member.school"
+              :course="member.course"
+              :instrument="member.instrument"
+              :subinstrument="member.subinstrument"
+              :bgcolor="member.bgcolor"
+              imgSize="12rem"
+            />
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
+</section>

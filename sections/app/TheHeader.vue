@@ -1,8 +1,10 @@
 <template>
-  <v-app-bar dark dense height="64" fixed>
-    <v-toolbar-title :class="brandNameFontWeight">{{
-      brandName
-    }}</v-toolbar-title>
+  <v-app-bar color="primary lighten-1" dense height="64" fixed>
+    <v-toolbar-title
+      :class="brandNameFontWeight"
+      class="white--text header-size"
+      >{{ brandName }}</v-toolbar-title
+    >
     <v-spacer></v-spacer>
     <template v-for="link in links">
       <a
@@ -42,5 +44,9 @@ export default {
 
 .nt-app-bar-link {
   text-decoration: none !important;
+}
+.header-size {
+  font-size: 2.5vh;
+  font-family: 'YuGothic';
 }
 </style>

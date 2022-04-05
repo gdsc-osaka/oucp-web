@@ -1,0 +1,70 @@
+<section class="pb-4 grey lighten-4">
+  <v-container>
+    <h3 class="font-weight-bold pb-4 primary--text text-center text-h3">
+      新歓イベント
+    </h3>
+
+    <v-sheet class="grey lighten-4">
+      <v-slide-group
+        mobile-breakpoint="600"
+        light
+        prev-icon="mdi-chevron-left-box"
+        next-icon="mdi-chevron-right-box"
+      >
+        <v-slide-item v-for="item in items" :key="item.title">
+          <v-card class="card-item" color="primary">
+            <v-row class="mx-auto my-auto" justify="center">
+              <v-sheet
+                class="card-item3"
+                color="primary darken-1"
+                justify="center"
+                elevation="2"
+              >
+                <v-row class="mx-auto my-auto" justify="start">
+                  <v-card-title
+                    class="card-title text-xm-h5 text-xs-h6 font-weight-bold mt-n1"
+                  >
+                    <v-sheet
+                      class="rounded-lg mr-1 px-2 py-1 black--text"
+                      color="secondary lighten-1"
+                    >
+                      {{item.day}}
+                    </v-sheet>
+
+                    <div class="mx-2">{{ item.title }}</div>
+                  </v-card-title>
+                </v-row>
+              </v-sheet>
+              <v-sheet
+                elevation="0"
+                class="card-item2"
+                color="primary lighten-1"
+                rounded
+              >
+                <v-card-text class="card-text">
+                  <div class="font-weight-bold">
+                    日時：{{item.date}} <br />
+                    場所：{{item.place}} <br />
+                  </div>
+                  <div v-html="item.detail" class="mt-4"></div>
+                </v-card-text>
+              </v-sheet>
+              <v-card-actions>
+                <v-btn v-bind:href="item.link" color="error" target="_blank">
+                  申し込みはこちらから
+                </v-btn>
+              </v-card-actions>
+            </v-row>
+          </v-card>
+        </v-slide-item>
+      </v-slide-group>
+    </v-sheet>
+    <v-row justify="center">
+      <v-col cols="2">
+        <v-icon class="hidden-sm-and-up" color="grey" large>
+          mdi-gesture-swipe-horizontal
+        </v-icon>
+      </v-col>
+    </v-row>
+  </v-container>
+</section>

@@ -1,0 +1,60 @@
+@import '@/assets/styles/app';
+
+.gont-tile-layout-template {
+  .gonuxt-tile {
+    padding: 0.25rem;
+  }
+}
+
+$breakPoint: 600px;
+
+.card-item {
+  margin: 0 10px 0 10px;
+  width: 360px;
+  height: 320px;
+  @media only screen and (max-width: $breakPoint) {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+.card-item2 {
+  elevation: 0;
+  margin: 10px 10px 10px 10px;
+  width: 340px;
+  height: 180px;
+  @media only screen and (max-width: $breakPoint) {
+    width: 280px;
+    height: 210px;
+  }
+}
+
+.card-item3 {
+  elevation: 0;
+  margin: 0 0 0 0;
+  width: 360px;
+  height: 60px;
+  @media only screen and (max-width: $breakPoint) {
+    width: 300px;
+    height: 60px;
+  }
+}
+
+.card-text {
+  color: white;
+  text-align: left;
+}
+
+.card-title {
+  color: white;
+  text-align: center;
+}
+
+.btn-item {
+  margin: 0 0 10px 0;
+}
+
+.sheet-item1 {
+  width: 70px;
+  height: 40px;
+}
