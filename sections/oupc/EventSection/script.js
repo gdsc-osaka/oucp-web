@@ -55,7 +55,7 @@ export default {
           place: '大阪城周辺',
           detail:
             '大学入学を期に大阪に来た皆さん！体を動かしながら大阪観光しませんか？\n 終了後は好きな飲み物で喉を潤しましょう！',
-          link: 'https://docs.google.com/forms/u/0/',
+          link: 'https://docs.google.com/forms/d/e/1FAIpQLSc3b7_RWvKju1LWtfZVWx0ak-rAHrqZ_qa8u-bXi-2DQJl5nw/viewform?usp=sf_link',
         },
         {
           title: '筋トレ会',
@@ -64,7 +64,7 @@ export default {
           place: '豊中キャンパス',
           detail:
             '受験勉強中になまった体を筋トレで絞り直して、モテボディを目指しませんか！？ムキムキは来る者を拒みません！',
-          link: 'https://docs.google.com/forms/u/0/',
+          link: 'https://docs.google.com/forms/d/e/1FAIpQLSf2XZr6dDpMNh4bJA0BeDAmU4Yg_cJR5LCDQcBoDe7xyIVsLg/viewform?usp=sf_link',
         },
       ],
     }
