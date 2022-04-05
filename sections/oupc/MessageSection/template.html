@@ -16,8 +16,9 @@
                 v-bind="attrs"
                 v-on="on"
                 @click="openModal(item)"
+                class="border-0"
               >
-                <v-row justify="space-between" dense>
+                <v-row justify="space-between" class="text-center" dense>
                   <v-col cols="4">
                     <div class="ma-3">
                       <v-img
@@ -26,7 +27,7 @@
                         class="rounded-sm text-center mb-1"
                       ></v-img>
                       <div
-                        class="text-center font-weight-bold txt3 font-txt"
+                        class="text-center tiadic--text font-weight-bold txt3 font-txt mt-2"
                         v-text="click"
                       ></div>
                     </div>
