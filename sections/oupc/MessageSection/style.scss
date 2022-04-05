@@ -1,7 +1,19 @@
 @import '@/assets/styles/app';
 
 .txt1 {
-  font-size: 1vw;
+  font-size: 1.5rem;
+}
+
+.txt2 {
+  font-size: 1rem;
+}
+
+.txt3 {
+  font-size: 0.8rem;
+}
+
+.font-txt {
+  font-family: '游ゴシック体', YuGothic, 'YuGothic M', sans-serif;
 }
 
 @media screen and (min-width: 600px) {

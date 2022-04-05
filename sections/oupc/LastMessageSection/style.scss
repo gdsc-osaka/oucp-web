@@ -2,6 +2,11 @@
   border-radius: 100px;
 }
 
+.fonts {
+  font-family: 'YuGothic', '游ゴシック', 'Hiragino Kaku', 'Gothic ProN',
+    'Hiragino Sans', 'Meiryo', sans-serif;
+}
+
 @media screen and (min-width: 600px) {
   .br-disp {
     display: none;

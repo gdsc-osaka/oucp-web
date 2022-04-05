@@ -3,9 +3,9 @@
     <OupcTopSection />
     <OupcEventSection />
     <OupcMessageSection />
-    <OupcScheduleSection />
-    <OupcQASection />
     <OupcMemberSection />
+    <OupcQASection />
+    <OupcScheduleSection />
     <OupcLastMessageSection />
     <OupcAccessSection />
   </section>

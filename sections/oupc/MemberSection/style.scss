@@ -14,9 +14,14 @@
   }
 }
 
-.imgsizes {
+.img-box {
   display: block;
   margin: auto;
-  width: 12rem;
-  height: 12rem;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.top-half {
+  object-position: 50% 0%;
 }
