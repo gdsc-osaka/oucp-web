@@ -5,7 +5,12 @@
     </h3>
 
     <v-sheet>
-      <v-slide-group mobile-breakpoint="700">
+      <v-slide-group
+        mobile-breakpoint="600"
+        light
+        prev-icon="mdi-chevron-left-box"
+        next-icon="mdi-chevron-right-box"
+      >
         <v-slide-item v-for="item in items" :key="item.title">
           <v-card class="card-item" color="primary">
             <v-row class="mx-auto my-auto" justify="center">
@@ -54,5 +59,12 @@
         </v-slide-item>
       </v-slide-group>
     </v-sheet>
+    <v-row justify="center">
+      <v-col cols="2">
+        <v-icon class="hidden-sm-and-up" large>
+          mdi-gesture-swipe-horizontal
+        </v-icon>
+      </v-col>
+    </v-row>
   </v-container>
 </section>
