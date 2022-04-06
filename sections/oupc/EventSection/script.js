@@ -28,7 +28,7 @@ export default {
           place: 'Zoom',
           detail:
             '女子団員とお話ししましょう🥰大学周辺のオススメカフェやメイク法…何でも教えちゃいます😉💕お話ししたい女子集合！！',
-          link: 'https://docs.google.com/forms/u/0/',
+          link: 'https://forms.gle/RzCbvDNTxErsdsUE6',
         },
         {
           title: '箕面の滝散策会',
