@@ -14,7 +14,7 @@
         class="text-decoration-none"
       >
         <v-btn color="white" rounded icon class="mx-1">
-          <v-icon size="2em">{{ link.icon }}</v-icon>
+          <v-icon size="2rem">{{ link.icon }}</v-icon>
         </v-btn>
       </a>
     </template>
@@ -46,7 +46,7 @@ export default {
   text-decoration: none !important;
 }
 .header-size {
-  font-size: 2.5vh;
+  font-size: min(1.5rem, calc((100vw - 12rem) / 11));
   font-family: 'YuGothic';
 }
 </style>

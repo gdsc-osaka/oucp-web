@@ -111,6 +111,32 @@
   }
 }
 
+.key-visual-container-large-pc {
+  position: relative !important;
+  margin: 0;
+  padding: 0;
+
+  .key-visual-text {
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    left: 2rem;
+    height: 40rem;
+    max-width: 100rem;
+
+    h1 {
+      font-size: 6.5rem;
+      font-family: 'Zen Maru Gothic';
+      font-weight: 700;
+    }
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
 .key-visual-container-pc {
   position: relative !important;
   margin: 0;

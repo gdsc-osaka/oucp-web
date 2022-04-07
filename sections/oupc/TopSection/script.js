@@ -4,9 +4,9 @@ export default {
     return {
       currentSlide: 0,
       slides: [
-        { id: 0, img: require('@/assets/oupc/img/ouen1.jpeg') },
-        { id: 1, img: require('@/assets/oupc/img/ouen2.JPG') },
-        { id: 2, img: require('@/assets/oupc/img/ouen3.JPG') },
+        { id: 0, img: require('@/assets/oupc/img/ouen3.JPG') },
+        { id: 1, img: require('@/assets/oupc/img/ouen1.jpeg') },
+        { id: 2, img: require('@/assets/oupc/img/ouen2.JPG') },
         { id: 3, img: require('@/assets/oupc/img/ouen4.JPG') },
         { id: 4, img: require('@/assets/oupc/img/ouen5.JPG') },
         { id: 5, img: require('@/assets/oupc/img/ouen6.JPG') },

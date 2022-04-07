@@ -1,15 +1,19 @@
 @import '@/assets/styles/app';
 
+.border-2 {
+  border-radius: 70px;
+}
+
 .txt1 {
-  font-size: 2.8vh;
+  font-size: min(calc((100vw - 10rem) / 15), 1.53rem);
 }
 
 .txt2 {
-  font-size: 2vh;
+  font-size: min(calc((100vw - 10rem) / 15 * 0.85), 1.1rem);
 }
 
 .txt3 {
-  font-size: 2vh;
+  font-size: min(calc((100vw - 10rem) / 15 * 0.85), 1.4rem);
 }
 
 .font-txt {
