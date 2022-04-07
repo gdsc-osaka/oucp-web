@@ -1,7 +1,9 @@
 <section class="pt-10 pb-15 grey lighten-4">
   <v-container>
     <div class="mb-8">
-      <h3 class="font-weight-bold mb-10 primary--text text-center text-h3">
+      <h3
+        class="font-weight-bold mb-10 mt-10 primary--text text-center text-h3"
+      >
         新入生へ<br class="br-disp" />メッセージ
       </h3>
       <h4 class="font-weight-bold mb-15 black--text text-center text-h5">
@@ -31,10 +33,6 @@
                         aspect-ratio="1"
                         class="rounded-sm text-center mb-1"
                       ></v-img>
-                      <div
-                        class="text-center tiadic--text font-weight-bold txt3 font-txt mt-2"
-                        v-text="click"
-                      ></div>
                     </div>
                   </v-col>
 
@@ -45,9 +43,23 @@
                     ></v-card-title>
 
                     <v-card-subtitle
-                      v-text="item.name"
-                      class="card-subtitle mt-auto font-weight-bold txt2 font-txt"
-                    ></v-card-subtitle>
+                      class="card-subtitle mt-auto font-weight-bold txt2 grey--text font-txt"
+                      >{{item.name}} &nbsp;
+                      <v-icon
+                        class="d-inline d-md-none"
+                        color="grey"
+                        size="txt1"
+                      >
+                        mdi-gesture-tap
+                      </v-icon>
+                      <v-icon
+                        class="d-none d-md-inline"
+                        color="grey"
+                        size="txt1"
+                      >
+                        mdi-cursor-default-click
+                      </v-icon></v-card-subtitle
+                    >
                   </v-col>
                 </v-row>
               </v-card>
@@ -56,12 +68,12 @@
 
           <v-card>
             <v-card-title
-              class="text-h5 text-center secondary lighten-2 font-txt"
+              class="text-h4 font-weight-bold secondary lighten-2 justify-center font-txt"
             >
               {{ modalTitle }}
             </v-card-title>
 
-            <v-card-text class="pt-3"> {{ modalText }} </v-card-text>
+            <v-card-text class="pt-3 text-h5" v-html="modalText"> </v-card-text>
           </v-card>
         </v-dialog>
       </v-col>
