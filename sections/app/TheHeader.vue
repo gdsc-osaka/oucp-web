@@ -46,7 +46,7 @@ export default {
   text-decoration: none !important;
 }
 .header-size {
-  font-size: 2.5vh;
+  font-size: min(2vw, 2em);
   font-family: 'YuGothic';
 }
 </style>

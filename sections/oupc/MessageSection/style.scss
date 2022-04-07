@@ -1,15 +1,15 @@
 @import '@/assets/styles/app';
 
 .txt1 {
-  font-size: 2.8vh;
+  font-size: min(3vw, 2.5rem);
 }
 
 .txt2 {
-  font-size: 2vh;
+  font-size: calc(0.8 * min(3vw, 2.5rem));
 }
 
 .txt3 {
-  font-size: 2vh;
+  font-size: min(3vw, 2.5rem);
 }
 
 .font-txt {

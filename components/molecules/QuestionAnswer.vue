@@ -46,7 +46,6 @@ export default {
 .faq-content:before {
   background-color: blue;
   content: 'A';
-  margin-bottom: 10%;
 }
 
 .faq-content:before,
