@@ -3,15 +3,15 @@ export default {
   data() {
     return {
       items: [
-        {
-          title: '履修登録相談会 ',
-          day: '4/2-4',
-          date: '4/2 19:00~ | 4/3,4 10:00~/16:00~',
-          place: 'Zoom',
-          detail:
-            '「大学の授業ってどんな感じ？」「学問の扉って何？」「そもそも履修登録って何をどうすればいいの？」そんな疑問に応援団員がお答えします！',
-          link: 'https://docs.google.com/forms/u/0/',
-        },
+        // {
+        //   title: '履修登録相談会 ',
+        //   day: '4/2-4',
+        //   date: '4/2 19:00~ | 4/3,4 10:00~/16:00~',
+        //   place: 'Zoom',
+        //   detail:
+        //     '「大学の授業ってどんな感じ？」「学問の扉って何？」「そもそも履修登録って何をどうすればいいの？」そんな疑問に応援団員がお答えします！',
+        //   link: 'https://docs.google.com/forms/u/0/',
+        // },
         {
           title: 'お花見',
           day: '4/11,15',
@@ -19,7 +19,7 @@ export default {
           place: '豊中キャンパス',
           detail:
             '豊中キャンパスの中には桜が綺麗なスポットが沢山！一緒にお花見やゲームをしませんか？花より団子なあなたも大歓迎！',
-          link: 'https://docs.google.com/forms/u/0/',
+          link: 'https://docs.google.com/forms/d/e/1FAIpQLSf_GG_w5lgqIu8vk4AzXWI-FZ5puuZy53zN-_6nLjKi-QBHvw/viewform?usp=sf_link',
         },
         {
           title: '女子会',
@@ -37,7 +37,7 @@ export default {
           place: '箕面大滝周辺',
           detail:
             '阪大から程近い場所にある名瀑・箕面大滝。美しい景色を楽しみながら滝まで散策しませんか。終了後にはご飯に行きましょう！',
-          link: 'https://docs.google.com/forms/u/0/',
+          link: 'https://docs.google.com/forms/d/e/1FAIpQLSc3jFRDMC8QxsZrFQQpAYqQPwnyOdZRr_opK2-5T1Kl1FOt9w/viewform?usp=sf_link',
         },
         {
           title: 'ウォーキング会',
@@ -46,7 +46,7 @@ export default {
           place: '豊中キャンパス',
           detail:
             '豊中キャンパスには面白いスポットがいっぱい！ウォーキングしながら豊中キャンパスを探検してみませんか！？',
-          link: 'https://docs.google.com/forms/u/0/',
+          link: 'https://docs.google.com/forms/d/e/1FAIpQLSfkaO-x4bg9XaDC4uKQGCgVPqC_t4vTOvyXTJz7OL8u6BvHyg/viewform?usp=sf_link',
         },
         {
           title: '大阪観光ランニング',
