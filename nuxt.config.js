@@ -2,14 +2,14 @@
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        router: {
-          base: '/oupc-web/',
-        },
-      }
+      router: {
+        base: '/oucp-web/',
+      },
+    }
     : {}
 const faviconPath =
   process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? '/oupc-web/favicon.ico'
+    ? '/oucp-web/favicon.ico'
     : '/favicon.ico'
 
 export default {
@@ -41,12 +41,12 @@ export default {
         content: 'nuxtjs,web',
       },
 
-      { hid: 'og:site_name', property: 'og:site_name', content: 'OUPC' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'OUCP' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://gdsc-osaka.github.io/oupc-web/',
+        content: 'https://gdsc-osaka.github.io/oucp-web/',
       },
       {
         hid: 'og:title',
@@ -62,7 +62,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://gdsc-osaka.github.io/oupc-web//ouen.JPG',
+        content: 'https://gdsc-osaka.github.io/oucp-web/ouen.JPG',
       },
 
       {
@@ -104,7 +104,14 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@/modules/custom-generate.js', 'nuxt-webfontloader'],
+  modules: [
+    '@/modules/custom-generate.js',
+    'nuxt-webfontloader',
+    ['@nuxtjs/google-gtag', {
+      id: process.env.GOOGLE_ANALYTICS_ID_OUCP,
+      debug: false,
+    }],
+  ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
