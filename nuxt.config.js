@@ -20,15 +20,20 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - OUPC',
-    title: 'OUPC',
+    titleTemplate: '%s - OUCP',
+    title: '大阪大学応援団新歓ページ',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'jp',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'OUPC' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          '大阪大学応援団の新歓ホームページです。活動内容や新歓情報、部員紹介、よくある質問などの新入生の皆さんに役立つ情報を掲載しています！',
+      },
       { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'keywords',
@@ -41,22 +46,23 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://gdsc-osaka.github.io/gonuxt/',
+        content: 'https://gdsc-osaka.github.io/oupc-web/',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'OUPC - Web Site of OUPC',
+        content: '大阪大学応援団新歓ページ2022',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'OUPC',
+        content:
+          '大阪大学応援団の新歓ホームページです。活動内容や新歓情報、部員紹介、よくある質問などの新入生の皆さんに役立つ情報を掲載しています！',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://gdsc-osaka.github.io/v.png',
+        content: 'https://gdsc-osaka.github.io/oupc-web//ouen.JPG',
       },
 
       {
