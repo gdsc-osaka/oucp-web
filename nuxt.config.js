@@ -104,7 +104,14 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@/modules/custom-generate.js', 'nuxt-webfontloader'],
+  modules: [
+    '@/modules/custom-generate.js',
+    'nuxt-webfontloader',
+    ['@nuxtjs/google-gtag', {
+      id: process.env.GOOGLE_ANALYTICS_ID_OUCP,
+      debug: false,
+    }],
+  ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
