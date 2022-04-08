@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-templates",
+  "name": "oucp-web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix"
   },
   "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "nuxt-webfontloader": "^1.1.0",
