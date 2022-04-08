@@ -62,7 +62,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://gdsc-osaka.github.io/oucp-web//ouen.JPG',
+        content: 'https://gdsc-osaka.github.io/oucp-web/ouen.JPG',
       },
 
       {
