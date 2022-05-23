@@ -108,7 +108,7 @@ export default {
     '@/modules/custom-generate.js',
     'nuxt-webfontloader',
     ['@nuxtjs/google-gtag', {
-      id: process.env.GOOGLE_ANALYTICS_ID_OUCP,
+      id: "G-4GQFMBBVBF",
       debug: false,
     }],
   ],
